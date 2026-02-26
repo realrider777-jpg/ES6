@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <input type="text" id="enter">
+    <button onclick="score();">Click Here</button>
+    <h4 id="display"></h4>
+    <script>
+      function score(){
+        const enter = document.getElementById("enter").value;
+        const display = document.getElementById("display");
+        let age = enter
+    
+
+if (age >= 22) {
+    display.innerText = "you are a senior";
+    display.style.color = "blue"
+} else if (age >= 18) {
+     display.innerText = "you are a yang";
+     display.style.color = "red"  
+} else {
+    display.innerText = "you are a minor ";
+    display.style.color = "green"
+
+  
+}
+}
+
+
+
+
+    </script>
+</body>
+</html>
