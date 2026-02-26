@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Image</title>
+</head>
+<body>
+
+    <div id="display"></div>
+
+    <script>
+        // Your array of image filenames
+        let arr = ["bb1 (2).jpg", "bb2.jpg", "bb3.jpg", "Berlin.jpg", "Cape.jpg"];
+        
+        console.log(arr[0]);
+        
+        // Get the display element
+        let display = document.getElementById("display");
+        
+        // Insert the filename into an <img> tag to show the actual picture
+        display.innerHTML = `<img src="${arr[0]}" alt="First Image" style="max-width: 100%;">`;
+
+        display.innerHTML += ` <img src = "${arr[2]}"alt = "third image "style = "max-width:100%">`;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="gallery"></div>
+
+    <script>
+        // Your existing code:
+var add = [
+  { id: 1, url: "https://picsum.photos/id/10/600/400", alt: "Mountain landscape" },
+  /* ... skipping the rest for brevity ... */
+  { id: 9, url: "https://picsum.photos/id/75/600/400", alt: "City street" },
+  { id: 10, url: "https://picsum.photos/id/82/600/400", alt: "Pine trees" }
+];
+var [a,b,c,d,e,f,g,h,i,j] = add;
+
+// Display 'j' (Pine trees) in HTML:
+document.getElementById('gallery').innerHTML = `<img src="${j.url}" alt="${j.alt}" width="300">`;
+
+document.getElementById('gallery').innerHTML = `
+  <img src="${e.url}" alt="${e.alt}" width="300">
+  <img src="${i.url}" alt="${i.alt}" width="300">
+  <img src="${j.url}" alt="${j.alt}" width="300">
+`;
+    </script>
+    
+</body>
+</html>
