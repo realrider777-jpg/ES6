@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="text">
+<input type="button" value="Click me" onclick="message()">
+<h1 id="head"></h1>
+
+<script>
+    // 1. Target the first element in the collection using [0]
+    var a = document.getElementsByName("text")[0]; 
+    var b = document.getElementById("head");
+
+    function message(){
+        // 2. Now 'a' refers to the input box itself
+        b.innerHTML = a.value;
+    }
+</script>
+       
+
+     
+        
+         
+        
+        
+
+       
+
+    </script>
+    
+</body>
+
+    
+
+</html>
